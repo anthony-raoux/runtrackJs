@@ -1,0 +1,13 @@
+#arcenciel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+img {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+#message {
+    margin-top: 20px;
+}

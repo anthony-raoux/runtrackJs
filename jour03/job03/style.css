@@ -1,0 +1,29 @@
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+#puzzle-container img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#reset {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
