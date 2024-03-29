@@ -1,16 +1,15 @@
 #game-container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 250px;
 }
 #puzzle-container {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
+    grid-template-columns: repeat(3, 200px);
     margin-bottom: 20px;
 }
 #puzzle-container img {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     cursor: pointer;
 }
 #message {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+    </nav>
+    <h2>Inscription</h2>
+    <form id="registerForm" action="#" method="post">
+        <div>
+            <label for="firstName">Prénom :</label><br>
+            <input type="text" id="firstName" name="firstName" required><br>
+            <span class="error" id="firstNameError"></span>
+        </div>
+        <div>
+            <label for="lastName">Nom :</label><br>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <span class="error" id="lastNameError"></span>
+        </div>
+        <div>
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div>
+            <label for="password">Mot de passe :</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <span class="error" id="passwordError"></span>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirmation du mot de passe :</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+            <span class="error" id="confirmPasswordError"></span>
+        </div>
+        <div>
+            <label for="address">Adresse :</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <span class="error" id="addressError"></span>
+        </div>
+        <div>
+            <label for="postalCode">Code postal :</label><br>
+            <input type="text" id="postalCode" name="postalCode" required><br>
+            <span class="error" id="postalCodeError"></span>
+        </div>
+        <div>
+            <button type="submit">S'inscrire</button>
+        </div>
+    </form>
+    <script src="registerValidation.js"></script>
+</body>
+</html>
