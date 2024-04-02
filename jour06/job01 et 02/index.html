@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple de mise en page Bootstrap</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<nav class="nav">
+    <a class="nav-link" href="#">LPTF</a>
+    <a class="nav-link active" aria-current="page" href="https://laplateforme.io/">Accueil</a>
+    <a class="nav-link" href="#">Units</a>
+    <a class="nav-link" href="#">Jobs</a>
+    <a class="nav-link disabled">Skills</a>
+</nav>
+
+<body>
+
+<h1 class="text-center m-y-3 p-2">LaPlateforme_ </h1>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-lg-3">
+    <div class="card">
+        <img src="papillon.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Un Papillon</h5>
+          <p class="card-text">Un papillon, c'est un peu comme une chenille, mais avec des ailes. Ne pas ingerer</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Commandez votre propre papillon
+          </button>
+        </div>
+      </div>
+    </div>
+
+  <!-- The Modal -->
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Félicitation !</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Votre achat à bien été enregistrer.
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+    <!-- jumbotron-->
+
+    <div class="col-lg-7">
+        <div class="jumbotron" style="background-color: #f2f2f2; position: relative; padding: 40px; margin-bottom: 40px;">
+            <h3>Bonjour, Monde!</h3> 
+            <p>Il existe plusieurs visions du terme:</p>
+            <p>Le monde est la matière, l'espace et les phénomènes qui nous sont accessibles par les sens, l'expérience </p>
+            <p>Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement, plus ou moins naturel.</p>
+            <hr> <!-- Ligne ajoutée -->
+            <p>Le sens étendu désigne l'univers dans son ensemble</p>
+            <button class="btn btn-danger btn-reboot" onclick="rebootWorld()">Rebooter le Monde</button>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            
+            <!-- Pagination en bas à droite -->
+            <ul class="pagination" style="position: absolute; bottom: 10px; right: 10px;">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">«</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" onclick="changeContent('HEY')">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" onclick="changeContent('TOI')">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">»</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Liste de droite -->
+
+    <div class="col-lg-2">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          Limbes
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Luxure</a>
+        <a href="#" class="list-group-item list-group-item-action">Gourmandise</a>
+        <a href="#" class="list-group-item list-group-item-action">Avarise</a>
+        <a href="#" class="list-group-item list-group-item-action">Colère</a>
+        <a href="#" class="list-group-item list-group-item-action">Heresie</a>
+        <a href="#" class="list-group-item list-group-item-action">Violence</a>
+        <a href="#" class="list-group-item list-group-item-action">Ruse et Tromperie</a>
+        <a href="#" class="list-group-item list-group-item-action">Trahison</a>
+        <a href="#" class="list-group-item list-group-item-action">Internet Explorer</a>
+      </div>
+    </div>
+  
+  <!-- Barre de chargement en dessous -->
+
+  <div class="row mt-3">
+    <div class="col">
+        <h4 class="text-end">Installation de AI 9000</h4>
+        <div class="progress">
+            <button class="btn btn-primary" onclick="decreaseProgress()">-</button>
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="progressBar"></div>
+            <button class="btn btn-primary" onclick="increaseProgress()"></button>
+        </div>
+    </div>
+</div>
+
+  
+  <!-- Login et mot de passe à gauche, adresse mail et mot de passe à droite -->
+
+  <div class="container">
+    <div class="row mt-3 d-flex justify-content-between">
+      <div class="col-lg-6">
+        <form id="myForm">
+          <div class="mb-3">
+            <h5>Recevez votre copie gratuite d'internet 2!</h5>
+            <label for="exampleInputEmail1" class="form-label">Login</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <h5>URL des Internet 2 et 2.1 Beta</h5>
+            <input type="text" class="form-control" id="urlDogeCoin" placeholder="URL de Dogecoin">
+            <input type="text" class="form-control" id="urlLautre" placeholder="URL de berlusconimkt">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg-3">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail2" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+            <p>We'll never share your email with anyone else.</p>
+          </div>
+          <div class="mb-2">
+            <label for="exampleInputPassword2" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Bootstrap JS et dépendances -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<script>
+    
+    let keySequence = '';
+  const modalTriggerKeys = ['D', 'G', 'C'];
+
+  // Function to handle key presses
+  document.addEventListener('keydown', function(event) {
+    const key = event.key.toUpperCase();
+    if (modalTriggerKeys.includes(key)) {
+      keySequence += key; // Update key sequence if the pressed key is D, G, or C
+    } else {
+      keySequence = ''; // Reset key sequence if any other key is pressed
+    }
+
+    // Check if the key sequence matches the trigger sequence
+    if (keySequence === modalTriggerKeys.join('')) {
+      displayFormInfo(); // Display form information in modal
+      $('#myModal').modal('show'); // Show modal
+      keySequence = ''; // Reset key sequence
+    }
+  });
+
+  // Function to gather form information and display in modal
+  function displayFormInfo() {
+    const login = $('#exampleInputEmail1').val();
+    const password = $('#exampleInputPassword1').val();
+    const urlDogeCoin = $('#urlDogeCoin').val();
+    const urlLautre = $('#urlLautre').val();
+    const info = `Login: ${login}\nMot de passe: ${password}\nURL de Dogecoin: ${urlDogeCoin}\nURL de berlusconimkt: ${urlLautre}`;
+    $('#formInfo').text(info);
+  }
+
+    function increaseProgress() {
+        var progressBar = document.getElementById('progressBar');
+        var currentValue = parseFloat(progressBar.getAttribute('aria-valuenow'));
+        var newValue = Math.min(currentValue + 5, 100); // Increase progress by 5%
+        progressBar.style.width = newValue + '%';
+        progressBar.setAttribute('aria-valuenow', newValue);
+    }
+
+    function decreaseProgress() {
+        var progressBar = document.getElementById('progressBar');
+        var currentValue = parseFloat(progressBar.getAttribute('aria-valuenow'));
+        var newValue = Math.max(currentValue - 5, 0); // Decrease progress by 5%
+        progressBar.style.width = newValue + '%';
+        progressBar.setAttribute('aria-valuenow', newValue);
+    }
+    function rebootWorld() {
+        // Modifier le texte du jumbotron
+        var jumbotron = document.querySelector('.jumbotron');
+        if (jumbotron) {
+            var jumbotronTitle = jumbotron.querySelector('h3');
+            if (jumbotronTitle) {
+                jumbotronTitle.textContent = "Avez-vous déjà désactivé un humain par erreur ?";
+            }
+        }
+    }
+    function changeContent(content) {
+        // Modifier le contenu du jumbotron
+        var jumbotron = document.querySelector('.jumbotron');
+        if (jumbotron) {
+            var jumbotronTitle = jumbotron.querySelector('h3');
+            if (jumbotronTitle) {
+                jumbotronTitle.textContent = content;
+            }
+        }
+    }
+  // Sélection de tous les éléments de la liste
+  var items = document.querySelectorAll('.list-group-item');
+
+  // Parcourir tous les éléments et ajouter un gestionnaire d'événement de clic
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      // Supprimer la classe 'active' de tous les éléments
+      items.forEach(function(item) {
+        item.classList.remove('active');
+      });
+      
+      // Ajouter la classe 'active' à l'élément cliqué
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
