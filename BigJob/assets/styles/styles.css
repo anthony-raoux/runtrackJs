@@ -1,0 +1,56 @@
+/* Styles CSS personnalisés */
+
+/* Centrer le formulaire au milieu de la page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Changer la couleur du bouton en rose clair */
+  .btn-primary {
+    background-color: #ffc0cb; /* Rose clair */
+    border-color: #ffc0cb; /* Bordure rose clair */
+    color: #fff; /* Texte blanc */
+    margin: 50px 50px 50px 40px;
+    width: 200px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffa7b9; /* Rose clair plus foncé au survol */
+    border-color: #ffa7b9; /* Bordure rose clair plus foncé au survol */
+  }
+  
+  .custom-bg-color {
+    background-color: #ffa7b9; /* Ou toute autre couleur rose clair que vous préférez */
+    border-color: #ffa7b9; /* Assurez-vous que la couleur de la bordure correspond à la couleur de fond */
+    color: #ffa7b9; /* Assurez-vous que le texte est visible sur le fond */
+  }
+
+.titreinscription {
+    font-size: xx-large;
+    margin-left: 50px;
+}
+
+.titreconnexion {
+    font-size: xx-large;
+    margin-left: 50px;
+}
+
+.form-group {
+    margin: 30px 30px 30px 15px;
+    width: 250px;
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #426282; /* Light gray background color */
+}
+
+
+
+

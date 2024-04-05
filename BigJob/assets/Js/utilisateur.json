@@ -1,0 +1,40 @@
+{
+  "utilisateurs": [
+    {
+      "id": 1,
+      "nom": "Modérateur 1",
+      "email": "moderateur1@laplateforme.io",
+      "role": "moderateur"
+    },
+    {
+      "id": 2,
+      "nom": "Modérateur 2",
+      "email": "moderateur2@laplateforme.io",
+      "role": "moderateur"
+    },
+    {
+      "id": 1,
+      "nom": "Utilisateur 1",
+      "email": "utilisateur1@laplateforme.io",
+      "role": "utilisateur"
+    },
+    {
+      "id": 2,
+      "nom": "Utilisateur 2",
+      "email": "utilisateur2@laplateforme.io",
+      "role": "utilisateur"
+    },
+    {
+      "id": 1,
+      "nom": "Admin 1",
+      "email": "admin1@laplateforme.io",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "nom": "Admin 2",
+      "email": "admin2@laplateforme.io",
+      "role": "admin"
+    }
+  ]
+}
